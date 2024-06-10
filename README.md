@@ -6,6 +6,6 @@
 
 ## Índice
 
-- [1. Variáveis](/variaveis/script.js)
-- [2. Tipos de Dados](/tipos-de-dados/script.js)
-- [2. Números e operadores](/numeros-e-operadores/script.js)
+- [1. Variáveis](/src/variaveis/script.js)
+- [2. Tipos de Dados](/src/tipos-de-dados/script.js)
+- [2. Números e operadores](/src/numeros-e-operadores/script.js)
