@@ -13,3 +13,4 @@
 - [1.5. Funções](/src/1.%20JS-para-iniciantes/1.5.%20funcoes/script.js)
 - [1.6. Objetos](/src/1.%20JS-para-iniciantes/1.6.%20objetos/script.js)
   - [1.6.1 Tudo é objeto](/src/1.%20JS-para-iniciantes/1.6.%20objetos/1.6.%201.%20tudo-e-objeto//script.js)
+- [1.7. Arrays e Loops](/src/1.%20JS-para-iniciantes/1.7.%20arrays-e-loops/script.js)
