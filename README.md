@@ -16,3 +16,8 @@
 - [1.7. Arrays e Loops](/src/1.%20JS-para-iniciantes/1.7.%20arrays-e-loops/script.js)
 - [1.8. Atribuição e Ternário](/src/1.%20JS-para-iniciantes/1.8.%20atribuicao-e-ternario/script.js)
 - [1.9. Escopo](/src/1.%20JS-para-iniciantes/1.9.%20escopo/script.js)
+
+2. DOM para iniciantes
+- [2.1. Escopo](/src/2.%20DOM-para-iniciantes/2.1.%20o-que-e-o-dom/script.js)
+- [2.2. Seleção de Elementos](/src/2.%20DOM-para-iniciantes/2.2.%20selecao-de-elementos/script.js)
+- [2.3. ForEach e Arrow Function](/src/2.%20DOM-para-iniciantes/2.3.%20foreach-e-arrow-function/script.js)
