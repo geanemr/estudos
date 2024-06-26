@@ -21,3 +21,6 @@
 - [2.1. Escopo](/src/2.%20DOM-para-iniciantes/2.1.%20o-que-e-o-dom/script.js)
 - [2.2. Seleção de Elementos](/src/2.%20DOM-para-iniciantes/2.2.%20selecao-de-elementos/script.js)
 - [2.3. ForEach e Arrow Function](/src/2.%20DOM-para-iniciantes/2.3.%20foreach-e-arrow-function/script.js)
+- [2.4. Classes e Atributos](/src/2.%20DOM-para-iniciantes/2.4.%20classes-e-atributos/script.js)
+- [2.5. Dimensoes e Distâncias](/src/2.%20DOM-para-iniciantes/2.5.%20dimensoes-e-distancias/)
+- [2.6. Eventos](/src/2.%20DOM-para-iniciantes/2.6.%20eventos/script.js)
