@@ -25,3 +25,6 @@
 - [2.5. Dimensoes e Distâncias](/src/2.%20DOM-para-iniciantes/2.5.%20dimensoes-e-distancias/)
 - [2.6. Eventos](/src/2.%20DOM-para-iniciantes/2.6.%20eventos/script.js)
 - [2.7. Traversing e Manipulação](/src/2.%20DOM-para-iniciantes/2.7.%20traversing-e-manipulacao/script.js)
+
+3.Objetos
+- [3.1. Funções Construtoras](/src/3.%20Objetos/3.1.%20funcoes-construtoras/script.js)
