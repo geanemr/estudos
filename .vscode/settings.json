@@ -11,5 +11,6 @@
     "workbench.sideBar.location": "left",
     // "editor.formatOnSave": true,
     "liveServer.settings.donotShowInfoMsg": true,
+    "editor.inlineSuggest.enabled": false,
   }
   
