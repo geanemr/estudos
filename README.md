@@ -32,5 +32,6 @@
 - [3.3. Native, Host e User](/src/3.%20Objetos/3.3.%20native-host-e-user/script.js)
 - [3.4. String](/src/3.%20Objetos/3.4.%20String/script.js)
 - [3.5. Number e math](/src/3.%20Objetos/3.5.%20Number-e-math/script.js)
-- [3.5. Array](/src/3.%20Objetos/3.6.%20Array/script.js)
+- [3.6. Array](/src/3.%20Objetos/3.6.%20Array/script.js)
+- [3.7. Array e iteração](/src/3.%20Objetos/3.7.%20Array-e-iteracao/script.js)
 
