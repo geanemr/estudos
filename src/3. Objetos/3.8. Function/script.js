@@ -193,3 +193,5 @@ console.log(elementos('ul', 'ativo', 'qualquer texto')) //<ul class="ativo">qual
 const h1Titulo = elementos.bind(null, 'h1', 'titulo');
 
 console.log(h1Titulo('Curso de JavaScript')); //<h1 class="titulo">Curso de JavaScript</h1>
+
+//https://dev.to/codecraftjs/understanding-call-apply-and-bind-essential-methods-in-javascript-d62

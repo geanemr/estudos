@@ -115,7 +115,7 @@ console.log(num); // retorna 6
 var num;
 
 let a;          // Declaração
-a = 100;        // Atribuição
+a = 100;        // Inicialização - Atribuição de valor
 console.log(a); // Uso
 //mais sobre o assunto:
 //https://medium.com/@allangrds/o-que-%C3%A9-hoisting-em-javascript-b8c629178518
