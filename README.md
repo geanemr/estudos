@@ -37,3 +37,5 @@
 - [3.8. Function](/src/3.%20Objetos/3.8.%20Function/script.js)
 - [3.9. Object](/src/3.%20Objetos/3.9.%20Object/script.js)
 
+4. Efeitos no Dom
+- [4.1 Dataset](/src/4.%20Efeitos%20no%20DOM/4.1.%20dataset/script.js)
