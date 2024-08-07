@@ -42,3 +42,7 @@
 - [4.2 setTimeout e setInterval](/front-end/javascript/4.%20Efeitos-no-DOM/4.2.%20setTimeout-e-setInterval/script.js)
 - [4.3 Date object](/front-end/javascript/4.%20Efeitos-no-DOM/4.3.%20Date-object/script.js)
 - [4.4 Forms](/front-end/javascript/4.%20Efeitos-no-DOM/4.4.%20forms/script.js)
+
+5. JS assíncrono
+- [5.1 JS assíncrono](/front-end/javascript/5.%20.JS-assincrono/5.1.%20JS-assincrono/script.js)
+- [5.2 Promises](/front-end/javascript/5.%20.JS-assincrono/5.2.%20Promises/script.js)
