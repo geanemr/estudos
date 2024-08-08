@@ -46,3 +46,4 @@
 5. JS assíncrono
 - [5.1 JS assíncrono](/front-end/javascript/5.%20.JS-assincrono/5.1.%20JS-assincrono/script.js)
 - [5.2 Promises](/front-end/javascript/5.%20.JS-assincrono/5.2.%20Promises/script.js)
+- [5.3 Fetch](/front-end/javascript/5.%20.JS-assincrono/5.3.%20fetch/script.js)
