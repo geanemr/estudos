@@ -94,8 +94,67 @@ fetch('https://viacep.com.br/ws/01001000/json/')
 //Retorna o status da requisição. Se foi 404, 200, 202 e mais. ok retorna um valor booleano sendo true para uma requisição de sucesso e false para uma sem sucesso.
 fetch('https://viacep.com.br/ws/01001000/json/')
 .then(response => {
-  console.log('response status:',response.status, response.ok); //response status: 200 true
+  console.log('response status e ok:',response.status, response.ok); //200 true
   if(response.status === 404) {
     console.log('Página não encontrada')
   }
 });
+
+
+//.url e .type
+//.url retorna o url da requisição. .type retorna o tipo da reposta.
+fetch('https://viacep.com.br/ws/01001000/json/')
+.then(response => {
+  console.log('response type e url:',response.type, response.url); //cors https://viacep.com.br/ws/01001000/json/
+});
+
+//types
+// basic: feito na mesma origem
+// cors: feito em url body pode estar disponível
+// error: erro de conexão
+// opaque: no-cors, não permite acesso de outros sites
+
+
+//EXERCÍCIOS
+// Utilizando a API https://viacep.com.br/ws/${CEP}/json/
+// crie um formulário onde o usuário pode digitar o cep
+// e o endereço completo é retornado ao clicar em buscar
+const input = document.querySelector('#cep-input');
+const formulario = document.querySelector('form')
+const span = document.querySelector('span')
+
+function getValue(event) {
+  event.preventDefault();
+  fetch(`https://viacep.com.br/ws/${input.value}/json/`)
+  .then(response => response.text())
+  .then(text => span.innerText = text)
+}
+formulario.addEventListener('submit', getValue)
+
+
+// Utilizando a API https://blockchain.info/ticker
+// retorne no DOM o valor de compra da bitcoin and reais.
+// atualize este valor a cada 30s
+const span2 = document.querySelector('.bitcoin')
+
+function getBitcoin() {
+fetch('https://blockchain.info/ticker')
+.then(response => response.json())
+.then(json => span2.innerHTML = `Valor do bitcoin em reais: R$${json.BRL.buy}`)
+}
+setInterval(getBitcoin, 30000)
+getBitcoin()
+
+// Utilizando a API https://api.chucknorris.io/jokes/random
+// retorne uma piada randomica do chucknorris, toda vez que
+// clicar em próxima
+const btn = document.querySelector('.proxima-piada')
+const span3 = document.querySelector('.piada')
+
+function getJoke() {
+  fetch('https://api.chucknorris.io/jokes/random')
+  .then(response => response.json())
+  .then(json => span3.innerText = json.value)
+}
+
+btn.addEventListener('click', getJoke)
