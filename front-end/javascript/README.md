@@ -49,3 +49,4 @@
 - [5.3. Fetch](/front-end/javascript/5.%20.JS-assincrono/5.3.%20fetch/script.js)
 - [5.4. JSON](/front-end/javascript/5.%20.JS-assincrono/5.4.%20JSON/script.js)
 - [5.5. API e HTTP](/front-end/javascript/5.%20.JS-assincrono/5.5.%20API-e-HTTP/script.js)
+- [5.6. Async/Await](/front-end/javascript/5.%20.JS-assincrono/5.6.%20async-await/script.js)

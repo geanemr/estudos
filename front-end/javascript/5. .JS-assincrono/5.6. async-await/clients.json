@@ -1,0 +1,50 @@
+{
+    "clients": [
+      {
+        "id": 1,
+        "name": "John Doe",
+        "email": "johndoe@example.com",
+        "phone": "+1-555-1234",
+        "address": {
+          "street": "123 Main St",
+          "city": "Springfield",
+          "state": "IL",
+          "postalCode": "62704"
+        },
+        "company": "Doe Industries",
+        "registered": "2023-01-15",
+        "status": "active"
+      },
+      {
+        "id": 2,
+        "name": "Jane Smith",
+        "email": "janesmith@example.com",
+        "phone": "+1-555-5678",
+        "address": {
+          "street": "456 Elm St",
+          "city": "Greenfield",
+          "state": "CA",
+          "postalCode": "93927"
+        },
+        "company": "Smith & Co.",
+        "registered": "2022-11-05",
+        "status": "inactive"
+      },
+      {
+        "id": 3,
+        "name": "Robert Johnson",
+        "email": "robertj@example.com",
+        "phone": "+1-555-8765",
+        "address": {
+          "street": "789 Oak St",
+          "city": "Lincoln",
+          "state": "NE",
+          "postalCode": "68508"
+        },
+        "company": "Johnson Enterprises",
+        "registered": "2024-02-20",
+        "status": "active"
+      }
+    ]
+  }
+  
