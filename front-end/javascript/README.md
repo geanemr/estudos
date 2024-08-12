@@ -51,3 +51,6 @@
 - [5.5. API e HTTP](/front-end/javascript/5.%20.JS-assincrono/5.5.%20API-e-HTTP/script.js)
 - [5.6. Async/Await](/front-end/javascript/5.%20.JS-assincrono/5.6.%20async-await/script.js)
 - [5.7. History API](/front-end/javascript/5.%20.JS-assincrono/5.7.%20history-api/script.js)
+
+6. Classes
+- [6.1. Classes](/front-end/javascript/6.%20Classes/6.1.%20classes/script.js)
