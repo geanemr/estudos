@@ -31,7 +31,6 @@ class Button2 {
   }
 }
 
-
 const yellowButton = new Button2('Comprar', 'yellow');
 console.log(yellowButton.element()); //<button style="background: yellow;">Comprar</button>
 
