@@ -55,3 +55,4 @@
 6. Classes
 - [6.1. Classes](/front-end/javascript/6.%20Classes/6.1.%20classes/script.js)
 - [6.2. get e set](/front-end/javascript/6.%20Classes/6.2.%20get-e-get/script.js)
+- [6.3. Extends ](/front-end/javascript/6.%20Classes/6.3.%20extends/script.js)
