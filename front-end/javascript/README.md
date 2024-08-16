@@ -57,3 +57,6 @@
 - [6.2. get e set](/front-end/javascript/6.%20Classes/6.2.%20get-e-get/script.js)
 - [6.3. Extends ](/front-end/javascript/6.%20Classes/6.3.%20extends/script.js)
   - [CountDown ](/front-end/javascript/6.%20Classes/countdown/script.js)
+
+7. Mais JS
+- [7.1. Function Expression](/front-end/javascript/7.%20Mais%20JS/7.1%20function-expression/script.js)
