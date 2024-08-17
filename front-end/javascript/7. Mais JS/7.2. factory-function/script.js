@@ -74,3 +74,52 @@ Pessoa.prototype.andar = function() {
 }
 
 const designer = Pessoa('Geane');
+
+function allElements(selectedElements) {
+  const elements = document.querySelectorAll(selectedElements);
+
+  function hide() {
+    elements.forEach((element) => {
+      element.style.display = "none";
+    });
+    this // para nao ter o retorno como undefined e poder encadear outros métodos de allElements (é a mesma coisa que return function allElements(selectedElements))
+  }
+
+  function show() {
+    elements.forEach((element) => {
+      element.style.display = "initial";
+    });
+    this 
+  }
+
+  function on(onEvent, callback) {
+    elements.forEach((element) => {
+      element.addEventListener(onEvent, callback);
+    });
+    this
+  }
+
+  function addClass(classname) {
+    elements.forEach((element) => {
+      element.classList.toggle(classname)
+    })
+    return allElements(selectedElements)
+  }
+
+  return {
+    elements,
+    hide,
+    show,
+    on,
+    addClass
+  };
+}
+
+const btns = allElements("button");
+btns.hide();
+btns.show();
+btns.on("click", handleClick);
+function handleClick(event) {
+  console.log(event.target);
+}
+btns.addClass('active')
