@@ -61,3 +61,4 @@
 7. Mais JS
 - [7.1. Function Expression](/front-end/javascript/7.%20Mais%20JS/7.1.%20function-expression/script.js)
 - [7.2. Factory Function](/front-end/javascript/7.%20Mais%20JS/7.2.%20factory-function/script.js)
+- [7.3. Closure e Debugging](/front-end/javascript/7.%20Mais%20JS/7.3.%20closure-e-debugging/script.js)

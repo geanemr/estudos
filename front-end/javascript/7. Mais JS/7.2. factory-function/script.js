@@ -75,6 +75,8 @@ Pessoa.prototype.andar = function() {
 
 const designer = Pessoa('Geane');
 
+
+//Exemplo de uso
 function allElements(selectedElements) {
   const elements = document.querySelectorAll(selectedElements);
 
