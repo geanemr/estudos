@@ -63,3 +63,4 @@
 - [7.2. Factory Function](/front-end/javascript/7.%20Mais%20JS/7.2.%20factory-function/script.js)
 - [7.3. Closure e Debugging](/front-end/javascript/7.%20Mais%20JS/7.3.%20closure-e-debugging/script.js)
 - [7.4. Destructuring](/front-end/javascript/7.%20Mais%20JS/7.4.%20destructuring/script.js)
+- [7.5. Rest e Spread](/front-end/javascript/7.%20Mais%20JS/7.5.%20rest-e-spread/script.js)
