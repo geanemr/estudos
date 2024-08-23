@@ -124,4 +124,8 @@ function createButton(background = 'blue', color = 'red') {
   comidas2.push(...frutas)
   console.log(comidas2); //["Pizza","Batata","Banana","Uva","Morango"]
   
+
+//   Resumo
+// Rest: Agrupa múltiplos elementos em um array.
+// Spread: Espalha os elementos de um array ou objeto.
   
