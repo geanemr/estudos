@@ -65,3 +65,6 @@
 - [7.4. Destructuring](/front-end/javascript/7.%20Mais%20JS/7.4.%20destructuring/script.js)
 - [7.5. Rest e Spread](/front-end/javascript/7.%20Mais%20JS/7.5.%20rest-e-spread/script.js)
 - [7.6. Loops e Iterable](/front-end/javascript/7.%20Mais%20JS//7.6.%20loops-e-iterable/script.js)
+
+8. Regexp
+- [8.1. Regexp Seleção](/front-end/javascript/8.%20Regular%20Expression/8.1.%20regexp-selecao/script.js)
