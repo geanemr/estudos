@@ -68,3 +68,4 @@
 
 8. Regexp
 - [8.1. Regexp Seleção](/front-end/javascript/8.%20Regular%20Expression/8.1.%20regexp-selecao/script.js)
+- [8.2. Regexp Substituição](/front-end/javascript/8.%20Regular%20Expression/8.1.%20regexp-substituicao/script.js)
