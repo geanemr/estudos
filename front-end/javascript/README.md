@@ -74,3 +74,4 @@
 
 9. Automação Frontend
 - [9.1. Linha de Comando](/front-end/javascript/9.%20Automacao-frontend/9.1%20linha-de-comando/script.js)
+- [9.2. NPM](/front-end/javascript/9.%20Automacao-frontend/9.2%20NPM/script.js)
