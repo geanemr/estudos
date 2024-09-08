@@ -71,3 +71,6 @@
 - [8.2. Regexp Substituição](/front-end/javascript/8.%20Regular%20Expression/8.2.%20regexp-substituicao/script.js)
 - [8.3. Regexp Padrões](/front-end/javascript/8.%20Regular%20Expression/8.3.%20regexp-padroes/script.js)
 - [8.4. Regexp Métodos](/front-end/javascript/8.%20Regular%20Expression/8.4.%20regexp-metodos/script.js)
+
+9. Automação Frontend
+- [9.1. Linha de Comando](/front-end/javascript/9.%20Automacao-frontend/9.1%20linha-de-comando/script.js)
