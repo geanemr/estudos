@@ -73,5 +73,7 @@
 - [8.4. Regexp Métodos](/front-end/javascript/8.%20Regular%20Expression/8.4.%20regexp-metodos/script.js)
 
 9. Automação Frontend
-- [9.1. Linha de Comando](/front-end/javascript/9.%20Automacao-frontend/9.1%20linha-de-comando/script.js)
-- [9.2. NPM](/front-end/javascript/9.%20Automacao-frontend/9.2%20NPM/script.js)
+- [9.1. Linha de Comando](/front-end/javascript/9.%20Automacao-frontend/9.1.%20linha-de-comando/script.js)
+- [9.2. NPM](/front-end/javascript/9.%20Automacao-frontend/9.2.%20NPM/script.js)
+- [9.3. ESlint](/front-end/javascript/9.%20Automacao-frontend/9.3.%20eslint/script.js)
+

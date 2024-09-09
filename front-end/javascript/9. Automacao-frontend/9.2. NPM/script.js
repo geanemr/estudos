@@ -30,7 +30,6 @@
 // Inicia uma nova configuração local do npm.
 
 // $ npm install
-
 // Instala todas as dependências listadas no arquivo package.json
 
 // Arquivos Invisíveis
