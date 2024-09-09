@@ -1,2 +1,6 @@
 .vscode/settings.json
 .vscode/launch.json
+node_modules
+eslint.config.mjs
+package.json
+package-lock.json
