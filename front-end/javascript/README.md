@@ -76,4 +76,6 @@
 - [9.1. Linha de Comando](/front-end/javascript/9.%20Automacao-frontend/9.1.%20linha-de-comando/script.js)
 - [9.2. NPM](/front-end/javascript/9.%20Automacao-frontend/9.2.%20NPM/script.js)
 - [9.3. ESlint](/front-end/javascript/9.%20Automacao-frontend/9.3.%20eslint/script.js)
+- [9.4. Webpack](/front-end/javascript/9.%20Automacao-frontend/9.4.%20webpack/script.js)
+- [9.5. Babel](/front-end/javascript/9.%20Automacao-frontend/9.5.%20babel/script.js)
 
