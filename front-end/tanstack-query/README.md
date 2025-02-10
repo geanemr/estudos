@@ -24,7 +24,7 @@
         * declaratively: configure how (e.g. window focus) and when to trigger a re-fetch
 
 ## Plus:
-![Alt text](image.png)
+![Alt text](./img/image.png)
 
 ## React Query Setup
 * Create Query Cliet, which contains cache and tools
