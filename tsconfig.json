@@ -1,0 +1,6 @@
+{
+  "compilerOptions": {
+    "target": "ESNext", //JS mais moderno
+    "strict": true // modo estrito, não deixa any
+  }
+}
