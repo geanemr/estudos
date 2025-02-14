@@ -14,3 +14,6 @@
 - [2.2. string, number e boolean](/front-end/typescript/2.%20typescript-basico/2.2.%20string-number-e-boolean/script.ts)
 - [2.3. Union Types](/front-end/typescript/2.%20typescript-basico/2.3.%20union-types/script.ts)
 - [2.4. Types e Interfaces](/front-end/typescript/2.%20typescript-basico/2.4.%20types-e-interfaces/script.ts)
+- [2.5. Arrays](/front-end/typescript/2.%20typescript-basico/2.5.%20arrays/script.ts)
+- [2.6. Any](/front-end/typescript/2.%20typescript-basico/2.6.%20any/script.ts)
+- [2.7. Null e Undefined](/front-end/typescript/2.%20typescript-basico/2.7.%20null-e-undefined/script.ts)

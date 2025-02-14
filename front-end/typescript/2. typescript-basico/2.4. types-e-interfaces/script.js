@@ -1,43 +1,77 @@
 "use strict";
-// Union Types
-// É comum termos funções que podem retornar ou receber tipos diferentes. Para isso usamos a barra vertical string | number | boolean.
-let total2 = 200;
-total2 = '300';
-// Funções
-// Funções podem receber parâmetros com diferentes tipos e também podem retornar diferentes tipos de dados.
-function isNumber(value) {
-    if (typeof value === 'number') {
-        return true;
+// Object
+// É possível definir a forma (shape) de um objeto usando uma sintaxe parecida com a de criação de objetos : {}
+function preencherDados(dados) {
+    document.body.innerHTML += `
+  <div>
+    <h2>${dados.nome}</h2>
+    <p>R$ ${dados.preco}</p>
+    <p>Inclui teclado: ${dados.teclado ? 'sim' : 'não'}</p>
+  </div>
+  `;
+}
+preencherDados({
+    nome: 'Computador',
+    preco: 2000,
+    teclado: false,
+});
+preencherDados({
+    nome: 'Notebook',
+    preco: 2500,
+    teclado: true,
+});
+let resultado = 10;
+resultado = '200';
+function preencherDados2(dados) {
+    document.body.innerHTML += `
+  <div>
+    <h2>${dados.nome}</h2>
+    <p>R$ ${dados.preco}</p>
+    <p>Inclui teclado: ${dados.teclado ? 'sim' : 'não'}</p>
+  </div>
+  `;
+}
+function pintarCategoria(categoria) {
+    if (categoria === 'design') {
+        console.log('Pintar vermelho');
     }
-    else {
-        return 'Não é número';
+    else if (categoria === 'codigo') {
+        console.log('Pintar verde');
+    }
+    else if (categoria === 'descod') {
+        console.log('Pintar roxo');
     }
 }
-console.log(isNumber("teste")); //Não é número
-// DOM
-// Funções que selecionam elementos do DOM geralmente retornam null como uma possibilidade de tipo, pois o TypeScript não tem acesso prévio ao DOM para saber se o elemento existe ou não.
-// Retorna HTMLButtonElement | null
-const button = document.querySelector('button');
-// Optional chaining
-// Executa click() se button for diferente de null/undefined
-button?.click();
-//Exercício
-// 1 - Crie uma função chamada toNumber
-// 2 - A função pode receber number | string
-// 3 - Se a função receber um número, retorne um número
-// 4 - Se a função receber uma string, retorne um número
-// 5 - Se ela receber algo diferente, retorne um erro. (throw "value deve ser um número ou uma string")
-const toNumber = (value) => {
-    if (typeof value === "number") {
-        return value;
-    }
-    if (typeof value === "string") {
-        return Number(value);
-    }
-    else {
-        throw "value deve ser um número ou uma string";
-    }
-};
-console.log(toNumber(12)); //12
-console.log(toNumber("20")); //20
-// console.log(toNumber(true)); //Argument of type 'boolean' is not assignable to parameter of type 'string | number'
+pintarCategoria('codigo');
+function preencherDados3(dados) {
+    document.body.innerHTML += `
+  <div>
+    <h2>${dados.nome}</h2>
+    <p>R$ ${dados.preco}</p>
+    <p>Inclui teclado: ${dados.teclado ? 'sim' : 'não'}</p>
+  </div>
+  `;
+}
+async function fetchProduct() {
+    const response = await fetch('https://api.origamid.dev/json/notebook.json');
+    const data = await response.json();
+    showProduct(data);
+}
+fetchProduct();
+function showProduct(data) {
+    document.body.innerHTML = `
+    <div>
+      <h2>${data.nome}</h2>
+      <h2>${data.preco}</h2>
+      <h2>${data.descricao}</h2>
+      <h2>${data.garantia}</h2>
+      <h2>${data.seguroAcidentes}</h2>
+      <h2>${data.empresaFabricante.nome}</h2>
+      <h2>${data.empresaFabricante.fundacao}</h2>
+      <h2>${data.empresaFabricante.pais}</h2>
+      <h2>${data.empresaMontadora.nome}</h2>
+      <h2>${data.empresaMontadora.fundacao}</h2>
+      <h2>${data.empresaMontadora.pais}</h2>
+    </div>
+  `;
+}
