@@ -18,15 +18,5 @@ async function fetchJSON(url) {
     const data = await response.json();
 }
 fetchJSON('https://api.origamid.dev/json/cursos.json');
-function todosCursos(cursos) {
-    cursos.forEach((curso) => {
-        document.body.innerHTML += `
-      <div>
-        <h2>${curso.nome}</h2>
-        <p>Horas: ${curso.horas}</p>
-      </div>
-    `;
-    });
-}
-const data = 'o any gera problemas';
-todosCursos(data);
+// Any e Erros
+// Usar o any pode quebrar a sua aplicação.

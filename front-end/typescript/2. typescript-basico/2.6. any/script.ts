@@ -27,22 +27,3 @@ fetchJSON('https://api.origamid.dev/json/cursos.json');
 
 // Any e Erros
 // Usar o any pode quebrar a sua aplicação.
-interface Curso {
-  nome: string;
-  horas: number;
-}
-
-function todosCursos(cursos: Curso[]) {
-  cursos.forEach((curso) => {
-    document.body.innerHTML += `
-      <div>
-        <h2>${curso.nome}</h2>
-        <p>Horas: ${curso.horas}</p>
-      </div>
-    `;
-  });
-}
-
-const data: any = 'o any gera problemas';
-
-todosCursos(data);
