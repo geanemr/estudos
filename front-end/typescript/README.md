@@ -6,8 +6,8 @@
 
 ## Índice
 1. TS para iniciantes
-- [1.1. Types](/front-end/typescript/1.1%20types/script.js)
-- [1.2. Type Annotation](/front-end/typescript/1.2%20type-annotation/script.js)
+- [1.1. Types](/front-end/typescript/1.%20typescript-para-iniciantes/1.1%20types/script.js)
+- [1.2. Type Annotation](/front-end/typescript/1.%20typescript-para-iniciantes/1.2%20type-annotation/script.js)
 
 2. TS Básico
 - [2.1. Annotation e Inference](/front-end/typescript/2.%20typescript-basico/2.1.%20annotation-e-inference/script.ts)
