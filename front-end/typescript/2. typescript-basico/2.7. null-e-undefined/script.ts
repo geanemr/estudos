@@ -1,16 +1,16 @@
 // null
 // null é um tipo primitivo que representa a ausência de valor. É comum em funções do DOM que fazem uma busca, retornarem null quando não são bem sucedidas.
-const buttons = document.querySelector('button');
+const button2 = document.querySelector('button');
 const config = localStorage.getItem('config');
 
-if (button !== null) {
-  button.click();
+if (button2 !== null) {
+  button2.click();
 }
-if (button) {
-  button.click();
+if (button2) {
+  button2.click();
 }
-if (button) button.click();
-button?.click();
+if (button2) button2.click();
+button2?.click();
 
 console.log(typeof null);
 
@@ -18,10 +18,8 @@ console.log(typeof null);
 // undefined
 // undefined representa variáveis/propriedades que foram instanciadas, porém, os seus valores ainda não foram definidos.
 let total3;
-console.log(total); // undefined
+console.log(total3); // undefined
 
-const data2 = {};
-console.log(data.nome);
 
 
 // Propriedades Opcionais
