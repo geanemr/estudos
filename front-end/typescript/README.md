@@ -17,3 +17,9 @@
 - [2.5. Arrays](/front-end/typescript/2.%20typescript-basico/2.5.%20arrays/script.ts)
 - [2.6. Any](/front-end/typescript/2.%20typescript-basico/2.6.%20any/script.ts)
 - [2.7. Null e Undefined](/front-end/typescript/2.%20typescript-basico/2.7.%20null-e-undefined/script.ts)
+
+3. Objetos e Interfaces
+- [3.1. Instanceof](/front-end/typescript/3.%20objetos-e-interfaces/3.1.%20instanceof/script.ts)
+- [3.2. Interfaces do Dom](/front-end/typescript/3.%20objetos-e-interfaces/3.2.%20interfaces-dom/script.ts)
+- [3.3. Eventos e Callback](/front-end/typescript/3.%20objetos-e-interfaces/3.3.%20eventos-e-callback/script.ts)
+- [3.4. Generic](/front-end/typescript/3.%20objetos-e-interfaces/3.4.%20generic/script.ts)
