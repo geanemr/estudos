@@ -21,3 +21,4 @@
 3. Objetos e Interfaces
 - [3.1. Instanceof](/front-end/typescript/3.%20objetos-e-interfaces/3.1.%20instanceof/script.ts)
 - [3.2. Interfaces do Dom](/front-end/typescript/3.%20objetos-e-interfaces/3.2.%20interfaces-dom/script.ts)
+- [3.2. Eventos e Callback](/front-end/typescript/3.%20objetos-e-interfaces/3.3.%20eventos-e-callback/script.ts)

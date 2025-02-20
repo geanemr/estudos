@@ -42,5 +42,6 @@ function changeColor(element) {
     element.style.border = "2px solid red";
 }
 //pois tanto HTMLAnchorElement quanto HTMLButtonElement herdam de HTML element
-links.forEach((link) => console.log(link.__proto__.__proto__.__proto__.__proto__.__proto__));
-HTMLAnchorElement / HTMLElement / Element / Node / EventTarget;
+// links.forEach((link)=> 
+// console.log(link.__proto__.__proto__.__proto__.__proto__.__proto__); HTMLAnchorElement  / HTMLElement  / Element / Node / EventTarget
+// )
