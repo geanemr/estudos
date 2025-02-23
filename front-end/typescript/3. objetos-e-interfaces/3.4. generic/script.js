@@ -1,75 +1,67 @@
 "use strict";
-// Eventos
-// Passamos o evento como uma string e uma função de callback no método addEventListener. A função de callback possui um parâmetro que faz referência ao evento executado.
-const btn = document.querySelector("button");
-function handleClick(event) {
-    console.log(event);
+// Generics
+// Um tipo genérico é uma forma de declararmos um parâmetro para a nossa função, classe ou interface. Esse tipo poderá ser indicado no momento do uso da função através de <Tipo>.
+// Exemplo 1
+function retorno(a) {
+    return a;
 }
-btn?.addEventListener("click", handleClick);
-function handleScroll(event) {
-    console.log(event);
+retorno('A Game').charAt(0);
+// retorno<string>(a: string): string
+retorno(200).toFixed();
+// retorno<number>(a: number): number
+// Exemplo 2
+function firstFive(lista) {
+    return lista.slice(0, 5);
 }
-window.addEventListener("scroll", handleScroll);
-// Event e instanceof
-// Uma função, quando criada para ser executada em diferentes tipos de eventos, deve receber como parâmetro o tipo comum entre elas Event.
-function ativarMenu(event) {
-    console.log(event.type);
-    if (event instanceof MouseEvent) {
-        console.log(event.pageX);
-    }
-    if (event instanceof TouchEvent) {
-        console.log(event.touches[0].pageX);
-    }
+const numbers = [1, 3, 4, 5, 3, 20, 3, 4, 5];
+const fruits = ['Banana', 'Pêra', 'Uva', 'Laranja', 'Limão'];
+const five1 = firstFive(numbers);
+const five2 = firstFive(fruits);
+// Exemplo 3
+function notNull(arg) {
+    if (arg !== null)
+        return arg;
+    else
+        return null;
 }
-document.documentElement.addEventListener("mousedown", ativarMenu);
-document.documentElement.addEventListener("touchstart", ativarMenu);
-document.documentElement.addEventListener("pointerdown", ativarMenu);
-// this
-// Dentro de uma função, o this faz referência ao objeto que executou a mesma. No JavaScript o this pode ser passado como o primeiro parâmetro da função, mesmo não sendo necessário informar ele durante a execução.
-function ativarMenu2(event) {
-    console.log("this.innerText:", this.innerText); //Login
-    console.log("event:", event); //PointerEvent
+notNull(200)?.toFixed();
+notNull('André')?.toLowerCase();
+// Exemplo 4
+function tipoDado(a) {
+    const resultado = {
+        dado: a,
+        tipo: typeof a,
+    };
+    console.log(resultado);
+    return resultado;
 }
-const btn2 = document.querySelector("button");
-btn2?.addEventListener("click", ativarMenu2);
-// target e currentTarget
-// O TypeScript não executa o JavaScript, assim ele não consegue assumir qual será o target ou currentTarget do evento executado. Os elementos são definidos como o tipo EventTarget, pois esse é o tipo mais comum entre os elementos que podem receber um evento.
-function ativarMenu3(event) {
-    const elemento = event.currentTarget;
-    if (elemento instanceof HTMLElement) {
-        elemento.style.background = "red";
-    }
+tipoDado(true);
+// extends
+// É possível indicar que o tipo genérico deve herdar de uma interface específica com o extends.
+// Exemplo 1
+function extractText(el) {
+    return el.innerText;
 }
-const btn3 = document.querySelector("button");
-btn3?.addEventListener("click", ativarMenu3);
-window.addEventListener("keydown", ativarMenu3);
-// Exercício
-// Utilizando a estrutura HTML/CSS abaixo, crie o script que irá fazer o botão mobile funcionar (ativar/desativar a navegação).
-// Estado dos elementos
-// menu inativo:
-// class="" em nav
-// aria-expanded="false" em button
-// aria-label="Abrir Menu" em button
-// menu ativo:
-// class="active" em nav
-// aria-expanded="true" em button
-// aria-label="Fechar Menu" em button
-const menuBtn = document.getElementById("btn-mobile");
-menuBtn?.addEventListener("pointerdown", toggleMenu);
-function toggleMenu(event) {
-    const nav = document.getElementById("nav");
-    const btnMenu = event.currentTarget;
-    if (btnMenu instanceof HTMLElement && nav) {
-        const active = nav.classList.contains("active");
-        if (active) {
-            nav.classList.remove("active");
-            btnMenu.setAttribute("aria-expanded", "false");
-            btnMenu.setAttribute("aria-label", "Abrir Menu");
-        }
-        else {
-            nav.classList.add("active");
-            btnMenu.setAttribute("aria-expanded", "true");
-            btnMenu.setAttribute("aria-label", "Fechar Menu");
-        }
-    }
+const link3 = document.querySelector('a'); //HTMLAnchorElement | null
+if (link3) {
+    console.log(extractText(link3));
+    // extractText<HTMLAnchorElement extends HTMLElement>(el: HTMLAnchorElement): string
+}
+// Exemplo 2
+function $(selector) {
+    return document.querySelector(selector);
+}
+const link4 = $('a')?.href;
+// Métodos
+// Métodos nativos são definidos utilizando generics, assim podemos indicar durante a execução qual será o tipo esperado.
+// Define que o retorno será um HTMLAnchorElement
+const link5 = document.querySelector('.link');
+link5?.href;
+async function getData(url) {
+    const response = await fetch(url);
+    return await response.json();
+}
+async function handleData() {
+    const notebook = await getData('https://api.origamid.dev/json/notebook.json');
+    console.log(notebook.nome);
 }
