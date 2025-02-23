@@ -23,3 +23,4 @@
 - [3.2. Interfaces do Dom](/front-end/typescript/3.%20objetos-e-interfaces/3.2.%20interfaces-dom/script.ts)
 - [3.3. Eventos e Callback](/front-end/typescript/3.%20objetos-e-interfaces/3.3.%20eventos-e-callback/script.ts)
 - [3.4. Generic](/front-end/typescript/3.%20objetos-e-interfaces/3.4.%20generic/script.ts)
+- [3.5. Functions](/front-end/typescript/3.%20objetos-e-interfaces/3.5.%20functions/script.ts)
