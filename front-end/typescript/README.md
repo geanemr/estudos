@@ -24,3 +24,5 @@
 - [3.3. Eventos e Callback](/front-end/typescript/3.%20objetos-e-interfaces/3.3.%20eventos-e-callback/script.ts)
 - [3.4. Generic](/front-end/typescript/3.%20objetos-e-interfaces/3.4.%20generic/script.ts)
 - [3.5. Functions](/front-end/typescript/3.%20objetos-e-interfaces/3.5.%20functions/script.ts)
+- [3.6. Type Guard e Control Flow](/front-end/typescript/3.%20objetos-e-interfaces/3.6.%20type-guard-e-control-flow/script.ts)
+- [3.7. Unknown](/front-end/typescript/3.%20objetos-e-interfaces/3.7.%20unknown/script.ts)
