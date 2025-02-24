@@ -93,7 +93,7 @@ interface Cursos {
   nivel: string;
 }
 
-function isCurso(value: unknown): value is Cursos { //funçãtypeguard, "value is Curso" é Type Predicate
+function isCurso(value: unknown): value is Cursos { //função typeguard, "value is Curso" é Type Predicate
   if (
     value &&
     typeof value === "object" &&
