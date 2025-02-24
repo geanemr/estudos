@@ -26,3 +26,4 @@
 - [3.5. Functions](/front-end/typescript/3.%20objetos-e-interfaces/3.5.%20functions/script.ts)
 - [3.6. Type Guard e Control Flow](/front-end/typescript/3.%20objetos-e-interfaces/3.6.%20type-guard-e-control-flow/script.ts)
 - [3.7. Unknown](/front-end/typescript/3.%20objetos-e-interfaces/3.7.%20unknown/script.ts)
+- [3.7. User Type Guard](/front-end/typescript/3.%20objetos-e-interfaces/3.8.%20user-type-guard/script.ts)
