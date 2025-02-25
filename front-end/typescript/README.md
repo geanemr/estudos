@@ -28,3 +28,5 @@
 - [3.7. Unknown](/front-end/typescript/3.%20objetos-e-interfaces/3.7.%20unknown/script.ts)
 - [3.8. User Type Guard](/front-end/typescript/3.%20objetos-e-interfaces/3.8.%20user-type-guard/script.ts)
 - [3.9. Type Assertion](/front-end/typescript/3.%20objetos-e-interfaces/3.9.%20type-assertion/script.ts)
+- [3.10. Destructuring](/front-end/typescript/3.%20objetos-e-interfaces/3.10.%20destructuring/script.ts)
+- [3.11. Intersection](/front-end/typescript/3.%20objetos-e-interfaces/3.11.%20intersection/script.ts)
