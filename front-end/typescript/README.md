@@ -30,3 +30,4 @@
 - [3.9. Type Assertion](/front-end/typescript/3.%20objetos-e-interfaces/3.9.%20type-assertion/script.ts)
 - [3.10. Destructuring](/front-end/typescript/3.%20objetos-e-interfaces/3.10.%20destructuring/script.ts)
 - [3.11. Intersection](/front-end/typescript/3.%20objetos-e-interfaces/3.11.%20intersection/script.ts)
+- [3.12. Exercícios](/front-end/typescript/3.%20objetos-e-interfaces/3.12.%20exercicios/script.ts)
