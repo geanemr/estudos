@@ -35,3 +35,4 @@
 4. Mais TypeScript
 - [4.1. Classes](/front-end/typescript/4.%20mais-typescript/4.1.%20classes/script.ts)
 - [4.2. Tuples](/front-end/typescript/4.%20mais-typescript/4.2.%20tuples/script.ts)
+- [4.3. Keyof](/front-end/typescript/4.%20mais-typescript/4.3.%20keyof/script.ts)
