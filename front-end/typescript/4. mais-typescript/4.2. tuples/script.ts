@@ -37,7 +37,7 @@ if (button3) {
 async function getVendas(){
   const response = await fetch("https://api.origamid.dev/json/vendas.json")
   const json = await response.json()
-  sum(json)
+  sumVendas(json)
 }
 
 interface ProdutoDetalhes {
@@ -47,7 +47,7 @@ interface ProdutoDetalhes {
 
 type Vendas = [string, number, string, ProdutoDetalhes]
 
-function sum(data:Vendas[]) {
+function sumVendas(data:Vendas[]) {
   const totalvendas = data.reduce((curr, acc) => {
     return curr + acc[1]
   },0)
