@@ -37,3 +37,10 @@
 - [4.2. Tuples](/front-end/typescript/4.%20mais-typescript/4.2.%20tuples/script.ts)
 - [4.3. Keyof](/front-end/typescript/4.%20mais-typescript/4.3.%20keyof/script.ts)
 - [4.4. Objetos](/front-end/typescript/4.%20mais-typescript/4.4.%20objetos/script.ts)
+
+5. Desenvolvimento
+- [5.1. tsconfig](/front-end/typescript/5.%20desenvolvimento/5.1.%20tsconfig/script.ts)
+- [5.2. Module](/front-end/typescript/5.%20desenvolvimento/5.2.%20module/script.ts)
+- [5.3. Declaration Files](/front-end/typescript/5.%20desenvolvimento/5.3.%20declaration-files/script.ts)
+- [5.4. Bibliotecas Externas](/front-end/typescript/5.%20desenvolvimento/5.4.%20bibliotecas-externas/script.ts)
+- [5.5. Ferramentas Front](/front-end/typescript/5.%20desenvolvimento/5.5.%20ferramentas-front/script.ts)
