@@ -16,7 +16,7 @@ var twoSum = function(nums, target) {
         if (dif in data) {
             return [data[dif], i]; //retorna os índices de dif armazenado em data e do número atual
         }
-        data[nums[i]] = i; //senão, atribui o valor de índíce i(atual)ao número atual e salva em data //data: {nums[1]: 9}
+        data[nums[i]] = i; //senão, atribui o valor de índíce i(atual)ao número atual e salva em data
         
     }
     return []; // retorna um array vazio se ao final do loop não encontrar a solução
