@@ -1,0 +1,24 @@
+
+.tabela {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+    border: 1px solid red;
+    align-items: center;
+}
+
+tr {
+    justify-content: space-around;
+    
+}
+
+th, td {
+    text-align: center;
+    justify-content: space-around;
+}
+
+tbody, thead {
+    display: flex;
+    justify-content: space-around;
+}
