@@ -11,15 +11,22 @@
 // 4 - Mostre as estatísticas na tela.
 // 5 - Organize o código em pequenos módulos.
 // 6 - Normalize os dados da API se achar necessário.
-async function fetchTransactions() {
-    const response = await fetch("https://api.origamid.dev/json/transacoes.json");
-    const json = await response.json();
-    showTransactions(json);
+async function fetchTransactions(url) {
+    try {
+        const response = await fetch(url);
+        if (!response.ok)
+            throw new Error("Erro:" + response.status);
+        return await response.json();
+    }
+    catch (error) {
+        if (error instanceof Error)
+            console.error("Erro:" + error.message);
+        return null;
+    }
 }
-function showTransactions(data) {
-    const newArray = Object.entries(data);
-    console.log(newArray[1][1]);
-    newArray.forEach((item) => {
+async function showTransactions() {
+    const data = await fetchTransactions("https://api.origamid.dev/json/transacoes.json");
+    data?.forEach((item) => {
         document.body.innerHTML += `
     <table class="tabela">
   <thead>
@@ -32,10 +39,10 @@ function showTransactions(data) {
   </thead>
   <tbody>
     <tr>
-      <td>${item[1].Status}</td>
-      <td>${item[1].ID}</td>
-      <td>${item[1].Data}</td>
-      <td>${item[1].Nome}</td>
+      <td>${item.Status}</td>
+      <td>${item.ID}</td>
+      <td>${item.Data}</td>
+      <td>${item.Nome}</td>
     </tr>
   </tbody>
   </tfoot>
@@ -43,4 +50,4 @@ function showTransactions(data) {
         `;
     });
 }
-fetchTransactions();
+showTransactions();
