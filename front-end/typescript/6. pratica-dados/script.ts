@@ -17,7 +17,7 @@ async function fetchTransactions<T>(url: string): Promise<T | null> {
     if (!response.ok) throw new Error("Erro:" + response.status);
     return await response.json();
   } catch (error) {
-    if(error instanceof Error) console.error("Erro:"+ error.message);
+    if (error instanceof Error) console.error("Erro:" + error.message);
     return null;
   }
 }
@@ -29,43 +29,77 @@ type TransacaoStatus =
   | "Aguardando pagamento"
   | "Estornada";
 
-interface Transaction {
+interface TransactionAPI {
   Status: TransacaoStatus;
   ID: number;
-  Data: Date;
+  Data: string;
   Nome: string;
   Email: string;
   ["Valor (R$)"]: string;
   ["Forma de Pagamento"]: TransacaoPagamento;
   ["Valor Novo"]: number;
 }
+interface Transaction {
+  status: TransacaoStatus;
+  id: number;
+  data: Date;
+  nome: string;
+  email: string;
+  moeda: string;
+  valor: number | null;
+  pagamento: TransacaoPagamento;
+  novo: boolean;
+}
+
+function normalizeTransaction(transaction: TransactionAPI) {
+  return {
+    status: transaction.Status,
+    id: transaction.ID,
+    data: stringtoDate(transaction.Data),
+    nome: transaction.Nome,
+    email: transaction.Email,
+    moeda: transaction["Valor (R$)"],
+    valor: normalizeCurrency(transaction["Valor (R$)"]),
+    pagamento: transaction["Forma de Pagamento"],
+    novo: Boolean(transaction["Valor Novo"]),
+  };
+}
+
+/**
+ * recebe string '1.200,50' retorna number;
+ */
+function normalizeCurrency(moeda: string): number | null {
+  const number = Number(moeda.replaceAll(".", "").replace(",", "."));
+  return isNaN(number) ? null : number;
+}
+
+function stringtoDate(texto:string): Date {
+  const [data, tempo] = texto.split(" ");
+  const [dia, mes, ano] = data.split("/").map(Number);
+  const [hora, minuto] = tempo.split(":").map(Number);
+  return new Date(ano, mes-1, dia, hora, minuto);
+}
 
 async function showTransactions() {
-  const data = await fetchTransactions<Transaction[]>(
-    "https://api.origamid.dev/json/transacoes.json"
+  const data = await fetchTransactions<TransactionAPI[]>(
+    "https://api.origamid.dev/json/transacoes.json?"
   );
-  data?.forEach((item: Transaction) => {
-    document.body.innerHTML += `
-    <table class="tabela">
-  <thead>
-    <tr>
-      <th>Status</th>
-      <th>ID</th>
-      <th>Data</th>
-      <th>Nome</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>${item.Status}</td>
-      <td>${item.ID}</td>
-      <td>${item.Data}</td>
-      <td>${item.Nome}</td>
-    </tr>
-  </tbody>
-  </tfoot>
-</table>
-        `;
+  if (!data) return;
+  const transactions = data.map(normalizeTransaction);
+  
+  const tbody = document.querySelector("tbody");
+
+  if (!tbody) return;
+
+  transactions.forEach((item) => {
+    const row = document.createElement("tr");
+    row.innerHTML = `
+      <td>${item.nome}</td>
+      <td>${item.id}</td>
+      <td>${item.status}</td>
+      <td>${item.data.toLocaleDateString("pt-BR")}</td>
+    `;
+    tbody.appendChild(row);
   });
 }
 
